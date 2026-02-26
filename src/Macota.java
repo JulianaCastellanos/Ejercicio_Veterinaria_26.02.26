@@ -1,5 +1,6 @@
 public class Macota {
 
+
     //atributos
 
     private String nombre;
@@ -71,10 +72,45 @@ public class Macota {
                 '}';
     }
 
+    // metodos propios
 
+    public int cumplirAnios() {
+        edad += 1;
+        return edad;
     }
 
+    public double engordar (double masPeso){
+        peso += masPeso;
+        return peso;
+    }
 
+    public double adelgazar (double menosPeso){
+        peso -= menosPeso;
+        return peso;
+    }
 
+    public boolean enfermar (boolean enfermo){
+        if (enfermo == true){
+            saludable = false;
+        }
+        return saludable;
+    }
 
+    public boolean recuperarSalud (boolean curar){
+        if (curar == true){
+            saludable = false;
+        }
+        return saludable;
+    }
+
+    public void mostrarFicha() {
+            System.out.println("Nombre: " + nombre);
+            System.out.println("Edad: " + edad);
+            System.out.println("Peso: " + peso);
+            if (saludable == true){
+                System.out.println("Estado: saludable");
+            } else {
+                System.out.println("Estado: enfermo");
+            }
+        }
 }
