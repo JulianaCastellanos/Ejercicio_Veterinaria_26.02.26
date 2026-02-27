@@ -1,4 +1,4 @@
-public class Macota {
+public class Mascota {
 
 
     //atributos
@@ -10,10 +10,10 @@ public class Macota {
     private boolean saludable;
 
 
-    public Macota() {
+    public Mascota() {
     }
 
-    public Macota(String nombre, String especie, int edad, double peso, boolean saludable) {
+    public Mascota(String nombre, String especie, int edad, double peso, boolean saludable) {
         this.nombre = nombre;
         this.especie = especie;
         this.edad = edad;
