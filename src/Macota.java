@@ -98,15 +98,15 @@ public class Macota {
 
     public boolean recuperarSalud (boolean curar){
         if (curar == true){
-            saludable = false;
+            saludable = true;
         }
         return saludable;
     }
 
     public void mostrarFicha() {
             System.out.println("Nombre: " + nombre);
-            System.out.println("Edad: " + edad);
-            System.out.println("Peso: " + peso);
+            System.out.println("Edad: " + edad + " años");
+            System.out.println("Peso: " + peso + " kg");
             if (saludable == true){
                 System.out.println("Estado: saludable");
             } else {
